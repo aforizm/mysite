@@ -1,0 +1,20 @@
+body {
+    font: 11pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    margin: 0; /* Отступы на странице */
+}
+
+header {
+	background-color: #c9dc87;
+	padding: 10px; 
+}
+
+footer{
+	background-color: #c6df90;
+	padding: 10px; 
+}
+
+#content { /* Правая колонка */
+    margin: 0 auto; /* Значения отступов */
+    padding: 5px; /* Поля вокруг текста */
+    border: 1px solid #333; /* Параметры рамки */
+}

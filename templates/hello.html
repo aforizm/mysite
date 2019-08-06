@@ -1,0 +1,24 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>get video from youtube</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='mystyle.css') }}">
+</head>
+<body>
+	<header class="">header</header>
+  <div id="content">
+	{% if name %}
+	  <h1>Ссылка ютуб: {{ name }}!</h1>
+	{% else %}
+	  <h1>Hello World</h1>
+	{% endif %}
+	<form method="post">
+	<input type="text" name="url" placeholder="Enter url">
+	<button class="" type="submit" > Enter </button>
+	</form>
+  </div>
+	<footer class="">footer</footer>
+</body>
+</html>
