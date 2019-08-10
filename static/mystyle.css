@@ -9,12 +9,71 @@ header {
 }
 
 footer{
-	background-color: #c6df90;
+	background-color: #e8b725;
 	padding: 10px; 
+	clear: left; 
 }
 
-#content { /* Правая колонка */
-    margin: 0 auto; /* Значения отступов */
+#wrapper { /* wrapper */
+	margin: 0 auto;
+	background: #bff2ed;
+	width:800px;
     padding: 5px; /* Поля вокруг текста */
-    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 10px;
+    
+}
+
+#main{
+	/*margin: 0 auto;*/
+	float: left;
+	width:600px;
+	background: #f2e5bf;
+	height: 500px;
+	border-radius: 10px;
+}
+
+#sidebar{
+	float: left;
+	width:190px;
+	background: #f0dfad;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.clear { 
+    clear: both; /* Отмена обтекания */ 
+   }
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
 }
