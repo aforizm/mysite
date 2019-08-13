@@ -9,7 +9,10 @@ app = Flask(__name__)
 def index():
 	if request.method == 'POST':
 		name = request.form['url']
-		name = GetLink(name)
+		if 'http' in name:
+			name = GetLink(name)
+		else:
+			name = ''
 		return render_template('hello.html', name=name)
 	else:
 		return render_template('hello.html')
