@@ -2,23 +2,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>get video from youtube</title>
+	<title>SiteName - get video from youtube</title>
 	<meta charset="utf-8">
     <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='mystyle.css') }}">
 </head>
 <body>
-	<header class="">header</header>
-  <div id="content">
+	<header class=""><span class="sitename">SiteName</span></header>
+	
+  <div id="wrapper">
+	    <h1>SiteName - Сервис для скачивания видео с youtube</h1>
+		<form method="post">
+		<input type="text" name="url" placeholder="Ссылка youtube">
+		<button type="submit" class=""></button>
+		</form>
+	
+	<div id="main">
 	{% if name %}
-	  <h1>Ссылка ютуб: {{ name }}!</h1>
+	  Ссылка ютуб: <a href="{{ name }}">
+	  Download</a>
 	{% else %}
-	  <h1>Hello World</h1>
+	  Hello World
 	{% endif %}
-	<form method="post">
-	<input type="text" name="url" placeholder="Enter url">
-	<button class="" type="submit" > Enter </button>
-	</form>
+	</div>
+
+	<div id="sidebar">
+		
+	</div>
+	<div class="clear"></div>
   </div>
-	<footer class="">footer</footer>
+	<footer class=""></footer>
 </body>
 </html>

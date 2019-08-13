@@ -1,6 +1,7 @@
 from flask import Flask, url_for
 from flask import render_template
 from flask import request
+from youtube import GetLink
 
 app = Flask(__name__)
 
@@ -8,11 +9,12 @@ app = Flask(__name__)
 def index():
 	if request.method == 'POST':
 		name = request.form['url']
+		name = GetLink(name)
 		return render_template('hello.html', name=name)
 	else:
 		return render_template('hello.html')
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/getvideo', methods=['GET', 'POST'])
 def getvideo():
 	if request.method == 'POST':
 		return 'post'

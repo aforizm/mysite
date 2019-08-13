@@ -4,19 +4,23 @@ body {
 }
 
 header {
-	background-color: #c9dc87;
+	background-color: #7BA7AB;
 	padding: 10px; 
 }
 
 footer{
-	background-color: #e8b725;
+	/*background-color: #e8b725;*/
 	padding: 10px; 
 	clear: left; 
 }
 
+h1{
+ 
+}
+
 #wrapper { /* wrapper */
 	margin: 0 auto;
-	background: #bff2ed;
+	/*background: #bff2ed;*/
 	width:800px;
     padding: 5px; /* Поля вокруг текста */
     border-radius: 10px;
@@ -27,15 +31,16 @@ footer{
 	/*margin: 0 auto;*/
 	float: left;
 	width:600px;
-	background: #f2e5bf;
-	height: 500px;
+  box-shadow: 0 0 10px #ccc;
+	/*background: #f2e5bf;*/
+	height: 600px;
 	border-radius: 10px;
 }
 
 #sidebar{
 	float: left;
 	width:190px;
-	background: #f0dfad;
+	/*background: #f0dfad;*/
 	height: 500px;
 	border-radius: 10px;
 }
@@ -47,8 +52,8 @@ footer{
 * {box-sizing: border-box;}
 form {
   position: relative;
-  width: 300px;
-  margin: 0 auto;
+  width: 600px;
+  /*margin: 0 auto;*/
 }
 input {
   width: 100%;
@@ -64,7 +69,7 @@ button {
   position: absolute; 
   top: 0;
   right: 0px;
-  width: 42px;
+  width: ;
   height: 42px;
   border: none;
   background: #7BA7AB;
@@ -72,8 +77,14 @@ button {
   cursor: pointer;
 }
 button:before {
-  content: "\f002";
+  content: "Скачать";
   font-family: FontAwesome;
   font-size: 16px;
   color: #F9F0DA;
+}
+
+.sitename {
+  font-size: 15px;
+  text-align: center;
+  margin-left: 10%;
 }
