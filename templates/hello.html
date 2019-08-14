@@ -4,7 +4,9 @@
 <head>
 	<title>SiteName - get video from youtube</title>
 	<meta charset="utf-8">
+	 <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='YanoneKaffeesatz-Light.ttf') }}">
     <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='mystyle.css') }}">
+    <!--<link rel="stylesheet" type="text/css" href="../static/mystyle.css">-->
 </head>
 <body>
 	<header class=""><span class="sitename">SiteName</span></header>
@@ -18,11 +20,23 @@
 	
 	<div id="main">
 	{% if name %}
-	  Ссылка ютуб: <a href="{{ name }}">
-	  Download</a>
+	  <div class="results">
+		<div class="preview">
+			<img src="{{name.bigthumb}}" width="270" height="200" border-radius="5">
+		</div>
+		<span class="videoname padd5">
+			{{name.title}}/
+			{{name.author}}
+		</span> <br>
+		<span class="download padd5">
+			<a href="{{name.getbest().url}}">{{name.getbest().resolution}} {{name.getbest().extension}} </a>
+		</span>
+		<div class="clear"></div>
+	</div>
 	{% else %}
-	  Hello World
+	  <h3>Приветсвенное слово</h3>
 	{% endif %}
+	
 	</div>
 
 	<div id="sidebar">

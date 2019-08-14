@@ -22,7 +22,9 @@ def getvideo():
 	if request.method == 'POST':
 		return 'post'
 	else:
-		return 'not post'
+		return '''
+		<h1>heellp</h1>
+		'''
 
 
 if __name__ == "__main__":
